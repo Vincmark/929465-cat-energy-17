@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Alexey Koshevoy](https://up.htmlacademy.ru/adaptive/17/user/929465).
-* Наставник: `Неизвестно`.
+* Наставник: [Анастасия Полозова](https://htmlacademy.ru/profile/id258631). 
 
 ---
 
