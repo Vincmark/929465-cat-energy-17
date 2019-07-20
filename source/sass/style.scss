@@ -1,0 +1,46 @@
+@import "fonts.scss";
+@import "variables.scss";
+@import "mixins.scss";
+@import "blocks/header.scss";
+@import "blocks/nav.scss";
+@import "blocks/main.scss";
+@import "blocks/welcome.scss";
+@import "blocks/programs.scss";
+@import "blocks/program.scss";
+@import "blocks/how-it-works.scss";
+@import "blocks/footer.scss";
+@import "blocks/social.scss";
+@import "blocks/catalog.scss";
+@import "blocks/show-catalog.scss";
+@import "blocks/catalog-extra.scss";
+
+*, *:before, *:after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+
+  white-space: nowrap;
+
+  border: 0;
+
+  clip-path: inset(100%);
+}

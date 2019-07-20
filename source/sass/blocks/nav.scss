@@ -1,0 +1,40 @@
+.nav {
+
+}
+
+.nav__toggle {
+
+  display: block;
+  position: relative;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  width: 24px;
+  height: 24px;
+  font-size: 0;
+  text-indent: -9999px;
+  appearance: none;
+  box-shadow: none;
+  border-radius: none;
+  border: none;
+  cursor: pointer;
+}
+
+.nav__toggle--open {
+  background-image: url("../img/icon-mobile-menu.svg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 24px 18px;
+}
+
+.nav__toggle--close {
+  background-image: url("../img/icon-close.svg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 18px 18px;
+}
+
+.nav__toggle:focus {
+  outline: none;
+
+}

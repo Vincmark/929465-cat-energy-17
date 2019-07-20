@@ -3,13 +3,22 @@
 <head>
     <meta charset="utf-8">
     <title>HTML Academy: Кэт энерджи</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
 <header class="header">
-    <img class="header__image" src="http://placehold.it/50x50" width="50" height="50" alt="Графический логотип Cat Energy">
-    <img class="header__text" src="http://placehold.it/200x50" width="200" height="50" alt="Текстовый логотип Cat Energy">
+    <img class="header__logo" src="img/logo-mobile.svg" width="190" height="38" alt="Логотип Cat Energy">
     <nav class="nav">
-        <button class="nav__toggle" type="button">Открыть меню</button>
+        <button class="nav__toggle nav__toggle--open" type="button">Открыть меню</button>
+        <div class="nav__wrapper">
+            <ul class="nav__list">
+                <li class="nav__item"><a href="index.html">Главная</a></li>
+                <li class="nav__item"><a href="catalog.html">Каталог продукции</a></li>
+                <li class="nav__item"><a href="form.html">Подбор программы</a></li>
+            </ul>
+        </div>
     </nav>
 </header>
 
@@ -80,5 +89,6 @@
     <a class="footer__academy-text" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
     <a class="footer__academy-link" href="https://htmlacademy.ru/intensive/adaptive"><img class="footer__academy-image" src="http://placehold.it/50x50" alt="HTML Academy logo"></a>
 </footer>
+<script src="js/script.js"></script>
 </body>
 </html>
