@@ -2,39 +2,43 @@
 
 }
 
-.nav__toggle {
+.nav__wrapper {
+  min-width: 320px;
+  display: none;
 
-  display: block;
-  position: relative;
-  overflow: hidden;
-  margin: 0;
-  padding: 0;
-  width: 24px;
-  height: 24px;
-  font-size: 0;
-  text-indent: -9999px;
-  appearance: none;
-  box-shadow: none;
-  border-radius: none;
-  border: none;
-  cursor: pointer;
 }
 
-.nav__toggle--open {
-  background-image: url("../img/icon-mobile-menu.svg");
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: 24px 18px;
+.nav__wrapper--active {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
-.nav__toggle--close {
-  background-image: url("../img/icon-close.svg");
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: 18px 18px;
+.nav__item {
+  height: 66px;
+  border-bottom: 1px solid #e6e6e6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.nav__toggle:focus {
-  outline: none;
+.nav__link {
+  font-family: 'Oswald Medium', sans-serif;
+  font-size: 20px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #111111;
+}
 
+.nav__link:hover {
+  color: rgba(17, 17, 17, 0.6);
+}
+
+.nav__link:active {
+  color: rgba(17, 17, 17, 0.3);
+}
+
+.nav__link--current {
+  padding-bottom: 12px;
+  border-bottom: 2px solid #68b738;
 }

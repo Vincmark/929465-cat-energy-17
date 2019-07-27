@@ -1,0 +1,66 @@
+.contacts {
+
+}
+
+.contacts__address-wrapper {
+  padding-top: 30px;
+  padding-bottom: 25px;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 20px;
+  padding-right: 20px;
+  width: 320px;
+  margin: auto;
+}
+
+.contacts__invite {
+  font-family: 'Oswald Regular', sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  color: #111111;
+  text-transform: uppercase;
+}
+
+.contacts__address {
+  font-family: "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  color: #444444;
+  font-style: normal;
+  padding-left: 25px;
+}
+
+.contacts__map {
+  position: relative;
+}
+
+.contacts__map-bg {
+  background-image: url("../img/bg-map-mobile@1x.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  width: 320px;
+  height: 400px;
+  display: block;
+  margin: auto;
+  position: relative;
+}
+
+.contacts__map-spin {
+  background-image: url("../img/map-pin.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 52px 45px;
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  top: 180px;
+  left: 125px;
+}
+
+.contacts__map-frame {
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
