@@ -23,6 +23,9 @@
 
 .welcome__wrapper_low {
   background-color: #ffffff;
+  width: 100%;
+  padding-right: 20px;
+  padding-left: 20px;
 }
 
 .welcome__header {
@@ -45,7 +48,6 @@
 }
 .welcome__image {
   margin-top: 25px;
-  //display: block;
   position: absolute;
   margin-left: auto;
   margin-right: auto;
@@ -69,7 +71,6 @@
   justify-content: center;
   margin-top: 135px;
 
-  width:100%;
 }
 
 .welcome__program-link:hover {

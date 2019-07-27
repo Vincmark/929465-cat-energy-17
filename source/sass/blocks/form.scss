@@ -1,0 +1,176 @@
+.questionnaire {
+
+}
+
+.questionnaire__header {
+  font-family: 'Oswald Regular', sans-serif;
+  font-size: 36px;
+  line-height: 60px;
+  color: #111111;
+}
+
+.questionnaire__description {
+  font-family: 'Oswald Regular', sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #111111;
+}
+
+.questionnaire__form {
+
+}
+
+.questionnaire__subheader {
+  font-family: 'Oswald Regular', sans-serif;
+  font-size: 24px;
+  line-height: 24px;
+  color: #111111;
+}
+
+.questionnaire__required {
+  font-family: 'Arial', sans-serif;
+  font-size: 14px;
+  line-height: 16px;
+  color: #444444;
+
+}
+
+.form {
+
+}
+
+.form__label {
+  font-family: 'Oswald Regular', sans-serif;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #222222;
+}
+
+.form__input-text {
+  font-family: 'Oswald Regular', sans-serif;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #444444;
+
+  height: 45px;
+  border: 1px solid #e6e6e6;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.form__label-radio {
+  font-family: 'Oswald Regular', sans-serif;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #222222;
+}
+
+.form__radio {
+
+}
+
+.form__input-email {
+  font-family: 'Oswald Regular', sans-serif;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #444444;
+
+  height: 45px;
+  border: 1px solid #e6e6e6;
+  padding-left: 15px;
+  padding-right: 50px;
+
+  background-image: url("../img/icon-mail.svg");
+  background-repeat: no-repeat;
+  background-position: center right 15px;
+  background-size: 17px 13px;
+  outline: none;
+}
+
+.form__input-email:focus {
+  border: 1px solid #000000;
+}
+
+.form__input-tel {
+  font-family: 'Oswald Regular', sans-serif;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #444444;
+
+  height: 45px;
+  border: 1px solid #e6e6e6;
+  padding-left: 15px;
+  padding-right: 50px;
+
+  background-image: url("../img/icon-phone.svg");
+  background-repeat: no-repeat;
+  background-position: center right 15px;
+  background-size: 20px 20px;
+}
+
+.form__textarea {
+  font-family: 'Oswald Regular', sans-serif;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #444444;
+
+  height: 150px;
+  min-width: 280px;
+  border: 1px solid #e6e6e6;
+  padding: 15px;
+
+  resize: none;
+}
+
+.form__label-checkbox {
+  font-family: 'Oswald Regular', sans-serif;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #222222;
+}
+
+.form__checkbox {
+
+}
+
+.form__submit {
+
+  font-family: 'Oswald Regular', sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: #ffffff;
+
+  display: block;
+
+
+  margin: 0;
+  padding: 0;
+  min-width: 280px;
+  height: 40px;
+
+
+
+  box-shadow: none;
+  border-radius: none;
+  border: none;
+  cursor: pointer;
+  background-color: #68b738;
+}
+
+.form__submit:hover {
+  background-color: #5eaa2f;
+}
+
+.form__submit:active {
+  background-color: #5eaa2f;
+  color: rgba(255, 255, 255, 0.3);
+}
