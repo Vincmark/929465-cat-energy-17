@@ -4,7 +4,6 @@
     <meta charset="utf-8">
     <title>Кэт энерджи. Заявка.</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
@@ -30,71 +29,106 @@
     <h1 class="questionnaire__header">Подбор программы</h1>
     <p class="questionnaire__description">Заполните анкету и мы подберем программу питания для вашего кота</p>
 
-        <form class="questionnaire__form form" action="form.html" method="get">
-            <label class="form__label">Имя:*
-            <input class="form__input-text" type="text" id="name" name="name" value="Барсик">
-            </label>
-            <label class="form__label">Вес (кг):*
-            <input class="form__input-text" type="text" id="weight" name="weight" value="7">
-            </label>
-            <label class="form__label">Возраст (лет):
-            <input class="form__input-text" type="text" id="age" name="age" value="7">
-            </label>
+        <form id="cat-form" class="questionnaire__form form" action="form.html" method="get">
+            <div class="form__group-base">
+                <div class="form__edit-wrapper">
+                    <label class="form__label" for="cat-name">Имя:*</label>
+                    <input class="form__input-text" type="text" id="cat-name" name="name" placeholder="Барсик">
+                </div>
 
-            <p>----------------------</p>
+                <div class="form__edit-wrapper">
+                    <label class="form__label" for="weight">Вес (кг):*</label>
+                    <input class="form__input-text" type="text" id="weight" name="weight" placeholder="7">
+                </div>
 
-            <label class="form__label-radio">
-                <input class="form__radio" type="radio" id="loseweight" name="program" value="loseweight" checked>
-                Похудение
-            </label>
-            <label class="form__label-radio">
-                <input class="form__radio" type="radio" id="gainweight" name="program" value="gainweight">
-                Набор массы
-            </label>
-            <label class="form__label-radio">
-                <input class="form__radio" type="radio" id="needadvice" name="program" value="needadvice">
-                Не знаю (нужен ваш совет)
-            </label>
+                <div class="form__edit-wrapper">
+                    <label class="form__label" for="age">Возраст (лет):</label>
+                    <input class="form__input-text" type="text" id="age" name="age" placeholder="7">
+                </div>
 
-            <p>----------------------</p>
+            </div>
 
-            <h2 class="questionnaire__subheader">Контактные данные (владельца кота)</h2>
-            <br><br>
-            <label class="form__label">Емейл:*
-                <input class="form__input-email" id="email" name="email" type="email" value="kuklachev@gmail.com">
-            </label>
-            <br><br>
-            <label class="form__label">Телефон:*
-                <input class="form__input-tel" id="phone" name="phone" type="tel" value="8 (960) 900-60-90">
-            </label>
+            <div class="form__group-program">
+                <label class="form__label-radio">
+                    <input class="form__radio" type="radio" id="loseweight" name="program" value="loseweight" checked>
+                    <span class="form__radio-view"></span>
+                    Похудение
+                </label>
+                <label class="form__label-radio">
+                    <input class="form__radio" type="radio" id="gainweight" name="program" value="gainweight">
+                    <span class="form__radio-view"></span>
+                    Набор массы
+                </label>
+                <label class="form__label-radio">
+                    <input class="form__radio" type="radio" id="needadvice" name="program" value="needadvice">
+                    <span class="form__radio-view"></span>
+                    Не знаю (нужен ваш совет)
+                </label>
+            </div>
 
-            <h2 class="questionnaire__subheader">Комментарии</h2>
-            <textarea class="form__textarea" id="comment" name="comment">Расскажите обо всех повадках кота</textarea>
+            <div class="form__subheader-wrapper">
+                <span class="form__subheader-underline"></span>
+                <h2 class="questionnaire__subheader">Контактные данные (владельца кота)</h2>
+            </div>
 
-            <h2 class="questionnaire__subheader">Дополнительно</h2>
-            <label class="form__label-checkbox">
-                <input class="form__checkbox" type="checkbox" id="sugarfree" name="sugarfree" checked>
-                Сахарозаменитель
-            </label>
-            <label class="form__label-checkbox">
-                <input class="form__checkbox" type="checkbox" id="purewater" name="purewater">
-                Питьевая вода
-            </label>
-            <label class="form__label-checkbox">
-                <input class="form__checkbox" type="checkbox" id="milk" name="milk">
-                Молоко
-            </label>
-            <label class="form__label-checkbox">
-                <input class="form__checkbox" type="checkbox" id="vitamins" name="vitamins">
-                Витамины
-            </label>
-            <input class="form__submit" type="submit" value="Отправить заявку">
+            <div class="form__group-contacts">
+                <div class="form__edit-wrapper">
+                    <label class="form__label" for="email">E-mail:*</label>
+                    <input class="form__input-email" id="email" name="email" type="email" placeholder="kuklachev@gmail.com">
+                </div>
+
+                <div class="form__edit-wrapper">
+                    <label class="form__label" for="phone">Телефон:*</label>
+                    <input class="form__input-tel" id="phone" name="phone" type="tel" placeholder="8 (960) 900-60-90">
+                </div>
+            </div>
+
+            <div class="form__subheader-wrapper">
+                <span class="form__subheader-underline"></span>
+                <h2 class="questionnaire__subheader">Комментарии</h2>
+            </div>
+
+            <div class="form__group-comment">
+                <textarea class="form__textarea" id="comment" name="comment" placeholder="Расскажите обо всех повадках кота"></textarea>
+            </div>
+
+            <div class="form__subheader-wrapper">
+                <span class="form__subheader-underline"></span>
+                <h2 class="questionnaire__subheader">Дополнительно</h2>
+            </div>
+
+            <div class="form__group-additional">
+                <label class="form__label-checkbox">
+                    <input class="form__checkbox" type="checkbox" id="sugarfree" name="sugarfree" checked>
+                    <span class="form__checkbox-view"></span>
+                    Сахарозаменитель
+                </label>
+                <label class="form__label-checkbox">
+                    <input class="form__checkbox" type="checkbox" id="purewater" name="purewater">
+                    <span class="form__checkbox-view"></span>
+                    Питьевая вода
+                </label>
+                <label class="form__label-checkbox">
+                    <input class="form__checkbox" type="checkbox" id="milk" name="milk">
+                    <span class="form__checkbox-view"></span>
+                    Молоко
+                </label>
+                <label class="form__label-checkbox">
+                    <input class="form__checkbox" type="checkbox" id="vitamins" name="vitamins">
+                    <span class="form__checkbox-view"></span>
+                    Витамины
+                </label>
+            </div>
+
+            <div class="form__group-submit">
+                <input class="form__submit" type="submit" value="Отправить заявку">
+                <p class="form__required">* — Обязательные поля</p>
+            </div>
         </form>
-        <p class="questionnaire__required">* — Обязательные поля</p>
     </section>
 
 
-    <section class="contacts">
+    <section class="contacts contacts--gray">
         <h2 class="visually-hidden">Контакты для дилеров</h2>
         <div class="contacts__address-wrapper">
             <p class="contacts__invite">Приглашаем к сотрудничеству дилеров!</p>

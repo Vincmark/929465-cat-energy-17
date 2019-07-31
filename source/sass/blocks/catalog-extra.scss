@@ -1,0 +1,146 @@
+.catalog-extra {
+  padding-top: 8px;
+}
+
+.catalog-extra__header {
+
+}
+
+.catalog-extra__subheader {
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+  font-family: 'Oswald Regular', sans-serif;
+  font-size: 24px;
+  line-height: 24px;
+  color: #111111;
+  background-color: #ffffff;
+  display: inline-block;
+
+}
+
+.catalog-extra__subheader-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.catalog-extra__subheader-underline {
+  position: absolute;
+  height: 3px;
+  top: 50%;
+  background-color: #68b738;
+  right: 0;
+  width: 100%;
+  z-index: -1;
+
+}
+
+.catalog-extra__list {
+  list-style: none;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 13px;
+
+}
+
+.catalog-extra__item {
+  padding-top: 15px;
+  padding-bottom: 16px;
+  border-top: 1px solid #cdcdcd;
+  border-bottom: 1px solid #cdcdcd;
+}
+
+.catalog-extra__item:not(:first-child) {
+  border-top: none;
+  border-bottom: 1px solid #cdcdcd;
+}
+
+.catalog-extra__title {
+  font-family: 'Oswald Regular', sans-serif;
+  font-size: 16px;
+  line-height: 16px;
+  color: #222222;
+  text-transform: uppercase;
+  padding-bottom: 8px;
+}
+
+.catalog-extra__params {
+  font-family: 'Arial', sans-serif;
+  font-size: 12px;
+  line-height: 14px;
+  color: #444444;
+
+  width: 100%;
+  padding-bottom: 15px;
+}
+
+.catalog-extra__params-title {
+
+}
+
+.catalog-extra__params-value {
+  text-align: right;
+}
+
+.catalog-extra__order-btn {
+
+}
+
+.catalog-extra__order-btn {
+  font-family: 'Oswald Regular', sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+
+  padding-top: 10px;
+  padding-bottom: 10px;
+  display: block;
+
+  background-color: #68b738;
+}
+
+.catalog-extra__order-btn:hover {
+  background-color: #5eaa2f;
+}
+
+.catalog-extra__order-btn:active {
+  background-color: #5eaa2f;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.catalog-extra__gift {
+  margin-top: 40px;
+  margin-bottom: 35px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: url('../img/gift-photo-mobile@1x.jpg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  width: 280px;
+  height: 289px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+
+.catalog-extra__gift-img {
+  //padding-bottom: 65px;
+
+}
+
+.catalog-extra__gift-text {
+  font-family: 'Arial', sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  color: #ffffff;
+  text-align: center;
+  padding-top: 65px;
+}

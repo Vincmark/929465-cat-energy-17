@@ -1,21 +1,4 @@
-@import "fonts.scss";
-@import "variables.scss";
-@import "mixins.scss";
-@import "blocks/header.scss";
-@import "blocks/nav.scss";
-@import "blocks/main.scss";
-@import "blocks/welcome.scss";
-@import "blocks/programs.scss";
-@import "blocks/program.scss";
-@import "blocks/how-it-works.scss";
-@import "blocks/live-example.scss";
-@import "blocks/contacts.scss";
-@import "blocks/form.scss";
-@import "blocks/footer.scss";
-@import "blocks/social.scss";
-@import "blocks/catalog.scss";
-@import "blocks/show-catalog.scss";
-@import "blocks/catalog-extra.scss";
+@import "normalize.css";
 
 *, *:before, *:after {
   box-sizing: inherit;
@@ -47,3 +30,22 @@ input[type="radio"].visually-hidden {
 
   clip-path: inset(100%);
 }
+
+@import "fonts.scss";
+@import "variables.scss";
+@import "mixins.scss";
+@import "blocks/header.scss";
+@import "blocks/nav.scss";
+@import "blocks/main.scss";
+@import "blocks/welcome.scss";
+@import "blocks/programs.scss";
+@import "blocks/program.scss";
+@import "blocks/how-it-works.scss";
+@import "blocks/live-example.scss";
+@import "blocks/contacts.scss";
+@import "blocks/form.scss";
+@import "blocks/footer.scss";
+@import "blocks/social.scss";
+@import "blocks/catalog.scss";
+@import "blocks/show-catalog.scss";
+@import "blocks/catalog-extra.scss";
