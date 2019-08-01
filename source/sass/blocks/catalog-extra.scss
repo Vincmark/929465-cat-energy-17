@@ -7,18 +7,13 @@
 }
 
 .catalog-extra__subheader {
-  padding-left: 20px;
-  padding-right: 20px;
-  padding-top: 20px;
-  padding-bottom: 20px;
-
   font-family: 'Oswald Regular', sans-serif;
   font-size: 24px;
   line-height: 24px;
   color: #111111;
   background-color: #ffffff;
   display: inline-block;
-
+  padding: 20px;
 }
 
 .catalog-extra__subheader-wrapper {
@@ -35,7 +30,6 @@
   right: 0;
   width: 100%;
   z-index: -1;
-
 }
 
 .catalog-extra__list {
@@ -43,7 +37,6 @@
   padding-left: 20px;
   padding-right: 20px;
   padding-top: 13px;
-
 }
 
 .catalog-extra__item {
@@ -72,7 +65,6 @@
   font-size: 12px;
   line-height: 14px;
   color: #444444;
-
   width: 100%;
   padding-bottom: 15px;
 }
@@ -97,11 +89,9 @@
   text-transform: uppercase;
   text-decoration: none;
   text-align: center;
-
   padding-top: 10px;
   padding-bottom: 10px;
   display: block;
-
   background-color: #68b738;
 }
 
@@ -115,10 +105,7 @@
 }
 
 .catalog-extra__gift {
-  margin-top: 40px;
-  margin-bottom: 35px;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 40px auto 35px auto;
   background-image: url('../img/gift-photo-mobile@1x.jpg');
   background-repeat: no-repeat;
   background-position: center center;
@@ -132,7 +119,6 @@
 }
 
 .catalog-extra__gift-img {
-  //padding-bottom: 65px;
 
 }
 

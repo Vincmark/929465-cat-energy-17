@@ -17,6 +17,7 @@
 .header__logo {
 
 }
+
 .header__wrapper {
   min-width: 320px;
   padding-left: 20px;
@@ -29,7 +30,6 @@
 }
 
 .header__nav-toggle {
-
   display: block;
   position: relative;
   overflow: hidden;
@@ -63,5 +63,4 @@
 
 .header__nav-toggle:focus {
   outline: none;
-
 }
