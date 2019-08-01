@@ -1,7 +1,3 @@
-.programs {
-
-}
-
 .program {
   padding-left: 20px;
   padding-right: 20px;
@@ -14,8 +10,9 @@
   padding: 25px 20px;
   position: relative;
 }
+
 .program__header {
-  font-family: 'Oswald Regular', sans-serif;
+  font-family: "Oswald Regular", sans-serif;
   font-size: 24px;
   line-height: 37px;
   text-transform: uppercase;
@@ -56,7 +53,7 @@
 }
 
 .program__description {
-  font-family: 'Arial', sans-serif;
+  font-family: "Arial", sans-serif;
   font-size: 14px;
   line-height: 18px;
   color: #444444;
@@ -65,7 +62,7 @@
 }
 
 .program__link {
-  font-family: 'Oswald Regular', sans-serif;
+  font-family: "Oswald Regular", sans-serif;
   font-size: 16px;
   line-height: 16px;
   text-transform: uppercase;
@@ -87,16 +84,16 @@
   position: absolute;
 }
 
-.program__link:hover:after {
+.program__link:hover::after {
   background-image: url("../img/icon-right-arrow-verylong.svg");
   width: 32px;
 }
 
 .program__link:active {
-  color: rgba(129,129,129, 0.3);
+  color: rgba(129, 129, 129, 0.3);
 }
 
-.program__link:active:after {
+.program__link:active::after {
   background-image: url("../img/icon-right-arrow-verylong.svg");
   width: 32px;
   opacity: 0.4;

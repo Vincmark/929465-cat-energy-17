@@ -8,7 +8,7 @@
 }
 
 .live-example__header {
-  font-family: 'Oswald Regular', sans-serif;
+  font-family: "Oswald Regular", sans-serif;
   font-size: 36px;
   line-height: 60px;
   color: #111111;
@@ -48,7 +48,7 @@
 }
 
 .live-example__item-point {
-  font-family: 'Oswald Regular', sans-serif;
+  font-family: "Oswald Regular", sans-serif;
   font-size: 24px;
   line-height: 24px;
   text-transform: uppercase;
@@ -56,7 +56,7 @@
 }
 
 .live-example__item-description {
-  font-family: 'Arial', sans-serif;
+  font-family: "Arial", sans-serif;
   font-size: 12px;
   line-height: 12px;
   color: #444444;
@@ -70,7 +70,7 @@
 }
 
 .live-example__expences {
-  font-family: 'Oswald Regular', sans-serif;
+  font-family: "Oswald Regular", sans-serif;
   font-size: 14px;
   line-height: 20px;
   text-transform: uppercase;
@@ -101,20 +101,12 @@
 }
 
 .live-example__cat-btn {
-  font-family: 'Oswald Regular', sans-serif;
+  font-family: "Oswald Regular", sans-serif;
   font-size: 14px;
   line-height: 20px;
   text-transform: uppercase;
   text-decoration: none;
   color: #111111;
-}
-
-.live-example__cat-btn--before {
-
-}
-
-.live-example__cat-btn--after {
-
 }
 
 .live-example__slider {
@@ -125,14 +117,12 @@
   padding-bottom: 35px;
 }
 
-
 .live-example__slider-container {
   padding-left: 20px;
   padding-right: 20px;
   line-height: 0;
   width: 40%;
 }
-
 
 .live-example__slider-central {
   appearance: none;
