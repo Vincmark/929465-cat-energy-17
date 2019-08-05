@@ -4,33 +4,33 @@
   display: flex;
   align-items: center;
   flex-direction: column;
-  background-color: #f2f2f2;
+  background-color: $color-bg-gray;
 }
 
-.footer__logo-text-link {
+.footer__link {
   align-self: center;
 }
 
-.footer__logo-text-link:hover {
+.footer__link:hover {
   opacity: 0.6;
 }
 
-.footer__logo-text-link:active {
+.footer__link:active {
   opacity: 0.3;
 }
 
-.footer__logo-text-image {
+.footer__image {
   align-self: center;
   margin-top: 40px;
   margin-bottom: 25px;
-  fill: #111111;
+  fill: $color-text-gray2;
 }
 
 .footer__social {
   padding-top: 20px;
   padding-bottom: 20px;
-  border-top: 1px solid #d9d9d9;
-  border-bottom: 1px solid #d9d9d9;
+  border-top: 1px solid $color-border3;
+  border-bottom: 1px solid $color-border3;
   max-width: 280px;
   width: 100%;
 }
@@ -49,7 +49,7 @@
   font-family: "Arial", sans-serif;
   font-size: 16px;
   line-height: 16px;
-  color: #444444;
+  color: $color-text-gray2;
   text-decoration: none;
 }
 
@@ -58,15 +58,15 @@
 }
 
 .footer__academy-link {
-  fill: #444444;
+  fill: $color-text-gray2;
   margin-right: -8px;
 }
 
 .footer__academy-link:hover {
-  fill: #68b738;
+  fill: $color-bg-green;
 }
 
 .footer__academy-link:active {
-  fill: #68b738;
+  fill: $color-bg-green;
   opacity: 0.3;
 }

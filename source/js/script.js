@@ -17,17 +17,17 @@ if (menuToggleButton!==null) {
 }
 
 
-var catToggleLinkBefore = document.querySelector('.live-example__cat-btn--before');
-var catToggleLinkAfter = document.querySelector('.live-example__cat-btn--after');
-var catImageHolder = document.querySelector('.live-example__cat');
-var catToggleSlider = document.querySelector('.live-example__slider-central');
+var catToggleLinkBefore = document.querySelector('.example__cat-btn--before');
+var catToggleLinkAfter = document.querySelector('.example__cat-btn--after');
+var catImageHolder = document.querySelector('.example__cat');
+var catToggleSlider = document.querySelector('.example__slider-central');
 
 if (catToggleLinkBefore!==null) {
     catToggleLinkBefore.addEventListener('click', function (evt) {
         evt.preventDefault();
-        if (catImageHolder.classList.contains('live-example__cat--after')) {
-            catImageHolder.classList.remove('live-example__cat--after');
-            catImageHolder.classList.add('live-example__cat--before');
+        if (catImageHolder.classList.contains('example__cat--after')) {
+            catImageHolder.classList.remove('example__cat--after');
+            catImageHolder.classList.add('example__cat--before');
             catToggleSlider.value = '1';
         }
     });
@@ -36,9 +36,9 @@ if (catToggleLinkBefore!==null) {
 if (catToggleLinkAfter!==null) {
     catToggleLinkAfter.addEventListener('click', function (evt) {
         evt.preventDefault();
-        if (catImageHolder.classList.contains('live-example__cat--before')) {
-            catImageHolder.classList.remove('live-example__cat--before');
-            catImageHolder.classList.add('live-example__cat--after');
+        if (catImageHolder.classList.contains('example__cat--before')) {
+            catImageHolder.classList.remove('example__cat--before');
+            catImageHolder.classList.add('example__cat--after');
             catToggleSlider.value = '2';
         }
     });
@@ -50,14 +50,14 @@ if (catToggleSlider!==null) {
         console.log('slider alive');
         // console.log(catToggleSlider.value);
         if (catToggleSlider.value === '1') {
-            if (catImageHolder.classList.contains('live-example__cat--after')) {
-                catImageHolder.classList.remove('live-example__cat--after');
-                catImageHolder.classList.add('live-example__cat--before');
+            if (catImageHolder.classList.contains('example__cat--after')) {
+                catImageHolder.classList.remove('example__cat--after');
+                catImageHolder.classList.add('example__cat--before');
             }
         } else if (catToggleSlider.value === '2') {
-            if (catImageHolder.classList.contains('live-example__cat--before')) {
-                catImageHolder.classList.remove('live-example__cat--before');
-                catImageHolder.classList.add('live-example__cat--after');
+            if (catImageHolder.classList.contains('example__cat--before')) {
+                catImageHolder.classList.remove('example__cat--before');
+                catImageHolder.classList.add('example__cat--after');
             }
         }
     });

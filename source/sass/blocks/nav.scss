@@ -11,7 +11,7 @@
 
 .nav__item {
   height: 66px;
-  border-bottom: 1px solid #e6e6e6;
+  border-bottom: 1px solid $color-border4;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -22,18 +22,18 @@
   font-size: 20px;
   text-transform: uppercase;
   text-decoration: none;
-  color: #111111;
+  color: $color-text-gray1;
 }
 
 .nav__link:hover {
-  color: rgba(17, 17, 17, 0.6);
+  color: $color-text-gray06
 }
 
 .nav__link:active {
-  color: rgba(17, 17, 17, 0.3);
+  color: $color-text-gray03
 }
 
 .nav__link--current {
   padding-bottom: 12px;
-  border-bottom: 2px solid #68b738;
+  border-bottom: 2px solid $color-bg-green;
 }

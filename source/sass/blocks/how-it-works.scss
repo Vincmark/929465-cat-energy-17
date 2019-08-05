@@ -8,7 +8,7 @@
   font-family: "Oswald Regular", sans-serif;
   font-size: 36px;
   line-height: 60px;
-  color: #111111;
+  color: $color-text-gray1;
   padding-top: 15px;
   padding-bottom: 4px;
 }
@@ -26,14 +26,14 @@
   font-family: "Arial", sans-serif;
   font-size: 14px;
   line-height: 18px;
-  color: #444444;
+  color: $color-text-gray2;
   padding-left: 20px;
 }
 
 .how-it-works__item-icon {
   min-width: 60px;
   height: 60px;
-  background-color: #68b738;
+  background-color: $color-bg-green;
   background-repeat: no-repeat;
   background-position: center center;
 }

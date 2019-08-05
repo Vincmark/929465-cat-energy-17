@@ -1,8 +1,8 @@
 .show-catalog {
   border-top: none;
-  border-left: 1px solid #ededed;
-  border-right: 1px solid #ededed;
-  border-bottom: 1px solid #ededed;
+  border-left: 1px solid $color-border;
+  border-right: 1px solid $color-border;
+  border-bottom: 1px solid $color-border;
   padding: 27px 20px 25px 20px;
 }
 
@@ -24,7 +24,7 @@
   height: 30px;
   top: 0;
   left: 14px;
-  background-color: #d3d3d3;
+  background-color: $color-bg-gray4;
 }
 
 .show-catalog__btn-plus::before {
@@ -34,14 +34,14 @@
   height: 2px;
   top: 14px;
   left: 0;
-  background-color: #d3d3d3;
+  background-color: $color-bg-gray4;
 }
 
 .show-catalog__header {
   font-family: "Oswald Regular", sans-serif;
   font-size: 16px;
   line-height: 20px;
-  color: #111111;
+  color: $color-text-gray1;
   text-transform: uppercase;
   text-align: center;
   padding-bottom: 9px;
@@ -51,7 +51,7 @@
   font-family: "Arial", sans-serif;
   font-size: 12px;
   line-height: 16px;
-  color: #444444;
+  color: $color-text-gray2;
   text-align: center;
   padding-bottom: 20px;
 }
@@ -60,21 +60,21 @@
   font-family: "Oswald Regular", sans-serif;
   font-size: 16px;
   line-height: 20px;
-  color: #444444;
+  color: $color-text-gray2;
   text-transform: uppercase;
   text-decoration: none;
   text-align: center;
   padding-top: 10px;
   padding-bottom: 10px;
   display: block;
-  background-color: #f2f2f2;
+  background-color: $color-bg-gray;
 }
 
 .show-catalog__btn-all:hover {
-  background-color: #ebebeb;
+  background-color: $color-bg-gray3;
 }
 
 .show-catalog__btn-all:active {
-  background-color: #ebebeb;
-  color: rgba(68, 68, 68, 0.3);
+  background-color: $color-bg-gray3;
+  color: $color-text-midgray03
 }

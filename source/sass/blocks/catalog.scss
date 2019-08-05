@@ -1,5 +1,5 @@
 .catalog__item {
-  border: 1px solid #ededed;
+  border: 1px solid $color-border;
   padding-top: 27px;
   padding-bottom: 25px;
   padding-left: 20px;
@@ -8,9 +8,9 @@
 
 .catalog__item:not(:first-child) {
   border-top: none;
-  border-left: 1px solid #ededed;
-  border-right: 1px solid #ededed;
-  border-bottom: 1px solid #ededed;
+  border-left: 1px solid $color-border;
+  border-right: 1px solid $color-border;
+  border-bottom: 1px solid $color-border;
 }
 
 .catalog__item-info {
@@ -43,7 +43,7 @@
   font-family: "Oswald Regular", sans-serif;
   font-size: 16px;
   line-height: 20px;
-  color: #111111;
+  color: $color-text-gray1;
   text-transform: uppercase;
   text-decoration: none;
   padding-bottom: 13px;
@@ -53,7 +53,7 @@
   font-family: "Arial", sans-serif;
   font-size: 12px;
   line-height: 16px;
-  color: #444444;
+  color: $color-text-gray2;
   width: 100%;
 }
 
@@ -65,7 +65,7 @@
   font-family: "Oswald Regular", sans-serif;
   font-size: 16px;
   line-height: 20px;
-  color: #ffffff;
+  color: $color-text-white;
   text-transform: uppercase;
   text-decoration: none;
   text-align: center;
@@ -74,14 +74,14 @@
   padding-bottom: 11px;
   display: block;
 
-  background-color: #68b738;
+  background-color: $color-bg-green;
 }
 
 .catalog__order-btn:hover {
-  background-color: #5eaa2f;
+  background-color: $color-bg-green-hover;
 }
 
 .catalog__order-btn:active {
-  background-color: #5eaa2f;
-  color: rgba(255, 255, 255, 0.3);
+  background-color: $color-bg-green-hover;
+  color: $color-text-white03;
 }

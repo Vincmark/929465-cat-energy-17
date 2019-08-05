@@ -6,8 +6,8 @@
   font-family: "Oswald Regular", sans-serif;
   font-size: 24px;
   line-height: 24px;
-  color: #111111;
-  background-color: #ffffff;
+  color: $color-text-gray1;
+  background-color: $color-bg-white;
   display: inline-block;
   padding: 20px;
 }
@@ -22,7 +22,7 @@
   position: absolute;
   height: 3px;
   top: 50%;
-  background-color: #68b738;
+  background-color: $color-bg-green;
   right: 0;
   width: 100%;
   z-index: -1;
@@ -38,20 +38,20 @@
 .catalog-extra__item {
   padding-top: 15px;
   padding-bottom: 16px;
-  border-top: 1px solid #cdcdcd;
-  border-bottom: 1px solid #cdcdcd;
+  border-top: 1px solid $color-border2;
+  border-bottom: 1px solid $color-border2;
 }
 
 .catalog-extra__item:not(:first-child) {
   border-top: none;
-  border-bottom: 1px solid #cdcdcd;
+  border-bottom: 1px solid $color-border2;
 }
 
 .catalog-extra__title {
   font-family: "Oswald Regular", sans-serif;
   font-size: 16px;
   line-height: 16px;
-  color: #222222;
+  color: $color-text-gray3;
   text-transform: uppercase;
   padding-bottom: 8px;
 }
@@ -60,7 +60,7 @@
   font-family: "Arial", sans-serif;
   font-size: 12px;
   line-height: 14px;
-  color: #444444;
+  color: $color-text-gray2;
   width: 100%;
   padding-bottom: 15px;
 }
@@ -73,23 +73,23 @@
   font-family: "Oswald Regular", sans-serif;
   font-size: 16px;
   line-height: 20px;
-  color: #ffffff;
+  color: $color-text-white;
   text-transform: uppercase;
   text-decoration: none;
   text-align: center;
   padding-top: 10px;
   padding-bottom: 10px;
   display: block;
-  background-color: #68b738;
+  background-color: $color-bg-green;
 }
 
 .catalog-extra__order-btn:hover {
-  background-color: #5eaa2f;
+  background-color: $color-bg-green-hover;
 }
 
 .catalog-extra__order-btn:active {
-  background-color: #5eaa2f;
-  color: rgba(255, 255, 255, 0.3);
+  background-color: $color-bg-green-hover;
+  color: $color-text-white03;
 }
 
 .catalog-extra__gift {
@@ -110,7 +110,7 @@
   font-family: "Arial", sans-serif;
   font-size: 16px;
   line-height: 20px;
-  color: #ffffff;
+  color: $color-text-white;
   text-align: center;
   padding-top: 65px;
 }
