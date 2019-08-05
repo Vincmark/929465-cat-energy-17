@@ -22,3 +22,24 @@
   fill: $color-bg-green;
   opacity: 0.3;
 }
+
+@media (min-width: 768px) {
+  .social {
+    border: none;
+  }
+
+  .social__icon--vk {
+    width: 30px;
+    height: 16px;
+  }
+
+  .social__icon--instagram {
+    width: 23px;
+    height: 23px;
+  }
+
+  .social__icon--facebook {
+    width: 14px;
+    height: 28px;
+  }
+}
