@@ -1,0 +1,87 @@
+.catalog__item {
+  border: 1px solid $color-border;
+  padding-top: 27px;
+  padding-bottom: 25px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.catalog__item:not(:first-child) {
+  border-top: none;
+  border-left: 1px solid $color-border;
+  border-right: 1px solid $color-border;
+  border-bottom: 1px solid $color-border;
+}
+
+.catalog__item-info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.catalog__col {
+  width: 50%;
+}
+
+.catalog__link-img {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+}
+
+.catalog__link-header {
+  text-decoration: none;
+}
+
+.catalog__image {
+  margin: 0;
+  padding: 0;
+  display: block;
+}
+
+.catalog__header {
+  font-family: "Oswald Regular", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  color: $color-text-gray1;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding-bottom: 13px;
+}
+
+.catalog__params {
+  font-family: "Arial", sans-serif;
+  font-size: 12px;
+  line-height: 16px;
+  color: $color-text-gray2;
+  width: 100%;
+}
+
+.catalog__params-value {
+  text-align: right;
+}
+
+.catalog__order-btn {
+  font-family: "Oswald Regular", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  color: $color-text-white;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+
+  padding-top: 11px;
+  padding-bottom: 11px;
+  display: block;
+
+  background-color: $color-bg-green;
+}
+
+.catalog__order-btn:hover {
+  background-color: $color-bg-green-hover;
+}
+
+.catalog__order-btn:active {
+  background-color: $color-bg-green-hover;
+  color: $color-text-white03;
+}

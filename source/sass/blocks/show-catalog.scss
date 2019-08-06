@@ -1,0 +1,80 @@
+.show-catalog {
+  border-top: none;
+  border-left: 1px solid $color-border;
+  border-right: 1px solid $color-border;
+  border-bottom: 1px solid $color-border;
+  padding: 27px 20px 25px 20px;
+}
+
+.show-catalog__btn-plus {
+  width: 30px;
+  height: 30px;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+  position: relative;
+  margin-bottom: 22px;
+}
+
+.show-catalog__btn-plus::after {
+  content: "";
+  position: absolute;
+  width: 2px;
+  height: 30px;
+  top: 0;
+  left: 14px;
+  background-color: $color-bg-gray4;
+}
+
+.show-catalog__btn-plus::before {
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 2px;
+  top: 14px;
+  left: 0;
+  background-color: $color-bg-gray4;
+}
+
+.show-catalog__header {
+  font-family: "Oswald Regular", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  color: $color-text-gray1;
+  text-transform: uppercase;
+  text-align: center;
+  padding-bottom: 9px;
+}
+
+.show-catalog__text {
+  font-family: "Arial", sans-serif;
+  font-size: 12px;
+  line-height: 16px;
+  color: $color-text-gray2;
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.show-catalog__btn-all {
+  font-family: "Oswald Regular", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  color: $color-text-gray2;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  display: block;
+  background-color: $color-bg-gray;
+}
+
+.show-catalog__btn-all:hover {
+  background-color: $color-bg-gray3;
+}
+
+.show-catalog__btn-all:active {
+  background-color: $color-bg-gray3;
+  color: $color-text-midgray03
+}

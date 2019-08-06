@@ -1,0 +1,39 @@
+.nav__wrapper {
+  min-width: 320px;
+  display: none;
+}
+
+.nav__wrapper--active {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.nav__item {
+  height: 66px;
+  border-bottom: 1px solid $color-border4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav__link {
+  font-family: "Oswald Medium", sans-serif;
+  font-size: 20px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: $color-text-gray1;
+}
+
+.nav__link:hover {
+  color: $color-text-gray06
+}
+
+.nav__link:active {
+  color: $color-text-gray03
+}
+
+.nav__link--current {
+  padding-bottom: 12px;
+  border-bottom: 2px solid $color-bg-green;
+}
