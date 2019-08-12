@@ -78,3 +78,95 @@
   background-color: $color-bg-green-hover;
   color: $color-text-white03;
 }
+
+@media (min-width: 769px) {
+  .welcome {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    height: 780px;
+  }
+
+  .welcome__wrapper_high {
+    width: 100%;
+    height: unset;
+    background-color: $color-bg-white;
+    background-image: none;
+    position: relative;
+    padding-right: 30px;
+    padding-left: 117px;
+  }
+
+  .welcome__header {
+    font-size: 60px;
+    line-height: 60px;
+    color: $color-text-gray1;
+    padding-top: 0;
+    text-align: left;
+    width: 450px;
+  }
+
+  .welcome__description {
+    font-family: "Oswald Regular", sans-serif;
+    font-size: 20px;
+    line-height: 20px;
+    color: $color-text-gray1;
+    text-align: left;
+    padding-top: 42px;
+  }
+
+  .welcome__program-link {
+    min-width: unset;
+    width: auto;
+    height: 50px;
+    font-family: "Oswald Regular", sans-serif;
+    font-size: 20px;
+    line-height: 20px;
+    padding-left: 26px;
+    padding-right: 26px;
+    margin-top: 0;
+  }
+
+  .welcome__wrapper_low {
+    width: auto;
+    padding-right: 20px;
+    padding-left: 120px;
+    padding-top: 48px;
+    background: transparent;
+  }
+
+  .welcome__image {
+    z-index: -1;
+    margin-top: 20px;
+  }
+}
+
+@media (min-width: 1281px) {
+  .welcome__background {
+    //background-color: transparent;
+    background-image: url("../img/index-background-desktop@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-size: 696px 720px;
+    background-color: #64a83b;
+    position: absolute;
+    height: 720px;
+    width: 50%;
+    top: -166px;
+    right: 0;
+    z-index: -1;
+  }
+
+  .welcome {
+    //min-width: 320px;
+    //display: flex;
+    //flex-direction: column;
+    //align-items: center;
+    //justify-content: center;
+    //position: relative;
+  }
+  .welcome__wrapper_high {
+    background-color: transparent;
+  }
+}
