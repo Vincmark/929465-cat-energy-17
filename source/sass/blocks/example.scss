@@ -69,7 +69,7 @@
   background-color: $color-bg-gray;
 }
 
-.example__expences {
+.example__expenses {
   font-family: "Oswald Regular", sans-serif;
   font-size: 14px;
   line-height: 20px;
@@ -146,14 +146,26 @@
 }
 
 @media (min-width: 769px) {
+  .example {
+    background-color: transparent;
+  }
+
+  .example__wrapper {
+    padding-left: 30px;
+    padding-right: 30px;
+    border-top: 1px solid $color-border4;
+  }
+
   .example__header {
     font-size: 60px;
     line-height: 60px;
+    padding-top: 43px;
   }
 
   .example__story {
     font-size: 16px;
     line-height: 24px;
+    padding-top: 65px;
   }
 
   .example__item-point {
@@ -164,11 +176,18 @@
   .example__item-description {
     font-size: 14px;
     line-height: 14px;
+    background-color: #ffffff;
+    width: unset;
+    bottom: -7px;
+    padding-left: 8px;
+    padding-right: 8px;
   }
 
-  .example__expences {
+  .example__expenses {
     font-size: 20px;
     line-height: 20px;
+    text-align: right;
+    padding-top: 64px;
   }
 
   .example__cat-btn {
@@ -176,5 +195,39 @@
     line-height: 20px;
     text-transform: uppercase;
     text-decoration: underline dotted $color-text-gray1;
+  }
+
+  .example__item {
+    width: 162px;
+    height: 72px;
+    border: 1px solid $color-border2;
+    border-radius: 3px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+
+  .example__list {
+    list-style: none;
+    display: flex;
+    justify-content: left;
+    padding-top: 51px;
+  }
+
+  .example__item:nth-child(2) {
+    margin-left: 42px;
+  }
+
+  .example__numbers-wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 0;
+  }
+
+  .example__expenses-price {
+    display: block;
+    padding-top: 10px;
   }
 }
