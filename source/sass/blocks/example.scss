@@ -144,3 +144,37 @@
   cursor: pointer;
   border-radius: 3px;
 }
+
+@media (min-width: 769px) {
+  .example__header {
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  .example__story {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .example__item-point {
+    font-size: 30px;
+    line-height: 37px;
+  }
+
+  .example__item-description {
+    font-size: 14px;
+    line-height: 14px;
+  }
+
+  .example__expences {
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .example__cat-btn {
+    font-size: 20px;
+    line-height: 20px;
+    text-transform: uppercase;
+    text-decoration: underline dotted $color-text-gray1;
+  }
+}
