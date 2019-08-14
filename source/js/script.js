@@ -45,7 +45,7 @@ if (catToggleLinkAfter!==null) {
 }
 
 if (catToggleSlider!==null) {
-    catToggleSlider.addEventListener('click', function (evt) {
+    catToggleSlider.addEventListener('input', function (evt) {
         evt.preventDefault();
         console.log('slider alive');
         // console.log(catToggleSlider.value);
