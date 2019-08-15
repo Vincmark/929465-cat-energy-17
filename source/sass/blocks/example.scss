@@ -230,4 +230,108 @@
     display: block;
     padding-top: 10px;
   }
+
+  .example__slider-wrapper {
+    position: relative;
+    height: 717px;
+    //width: 100%;
+  }
+
+  .example__cat-wrapper {
+    position: absolute;
+    width: 690px;
+    height: 517px;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    bottom: 100px;
+  }
+
+  .example__gray-after {
+    background-color: #eaeaea;
+    height: 460px;
+    width: 60%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+
+  .example__gray-before {
+    background-color: #f2f2f2;
+    height: 460px;
+    width: 40%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+
+  .example__cat-after {
+    background-image: url("../img/after-tablet@1x.png");
+    background-repeat: no-repeat;
+    background-position: center right;
+    background-size: 690px 517px;
+    width: 50%;
+    height: 517px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+
+  .example__cat-before {
+    background-image: url("../img/before-tablet@1x.png");
+    background-repeat: no-repeat;
+    background-position: center left;
+    background-size: 690px 517px;
+    width: 50%;
+    height: 517px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+
+  .example__slider {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 35px;
+    padding-bottom: 35px;
+  }
+
+  .example__slider-container {
+    padding-left: 25px;
+    padding-right: 25px;
+    line-height: 0;
+    width: 428px;
+  }
+
+  .example__slider-central {
+    appearance: none;
+    height: 6px;
+    width: 100%;
+    border: none;
+    border-radius: 3px;
+    outline: none;
+    background-color: #dcdcdc;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .example__slider-central::-webkit-slider-thumb {
+    appearance: none;
+    height: 34px;
+    width: 34px;
+    border-radius: 50%;
+    background: #ffffff;
+    border: 1px solid #cecece;
+    //box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+    cursor: pointer;
+  }
+
+  .example__slider-central::-webkit-slider-thumb::after {
+    content: "A";
+    width: 100px;
+    height: 100px;
+    display: block;
+  }
 }
