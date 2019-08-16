@@ -73,11 +73,23 @@
     font-family: "Oswald Regular", sans-serif;
     font-size: 20px;
     line-height: 25px;
+
+  }
+
+  .nav__link--index-current {
+    padding-bottom: 6px;
+    border-bottom: 2px solid $color-text-white;
+  }
+
+  .nav__link--index {
     color: $color-text-white;
   }
 
-  .nav__link--current {
-    padding-bottom: 6px;
-    border-bottom: 2px solid $color-text-white;
+  .nav__link--index:hover {
+    color: $color-text-white06;
+  }
+
+  .nav__link--index:active {
+    color: $color-text-white03;
   }
 }
