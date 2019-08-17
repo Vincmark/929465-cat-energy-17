@@ -114,3 +114,25 @@
   text-align: center;
   padding-top: 65px;
 }
+
+@media (min-width: 769px) {
+  .catalog-extra__subheader {
+    font-family: "Oswald Regular", sans-serif;
+    font-size: 24px;
+    line-height: 24px;
+    color: $color-text-gray1;
+    background-color: $color-bg-white;
+    display: inline-block;
+    padding: 20px;
+  }
+
+  .catalog-extra__title {
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .catalog-extra__params {
+    font-size: 16px;
+    line-height: 20px;
+  }
+}

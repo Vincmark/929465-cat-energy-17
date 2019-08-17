@@ -78,3 +78,15 @@
   background-color: $color-bg-gray3;
   color: $color-text-midgray03;
 }
+
+@media (min-width: 769px) {
+  .show-catalog__header {
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .show-catalog__text {
+    font-size: 16px;
+    line-height: 16px;
+  }
+}
