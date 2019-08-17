@@ -654,9 +654,8 @@
 
   }
 
-
   .questionnaire__subheader-wrapper {
-    width:  1280px;
+    width: 1280px;
     margin: auto;
   }
 
@@ -675,7 +674,6 @@
     padding-right: 30px;
     padding-top: 25px;
     padding-bottom: 40px;
-
   }
 
   .form__group-base {
@@ -747,30 +745,23 @@
     padding-left: 30px;
     padding-right: 30px;
     padding-top: 10px;
-
-
     padding-bottom: 80px;
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
-
     width: 1280px;
     margin: auto;
   }
 
   .form__required {
-    //width: 50%;
     text-align: left;
     padding-top: 0;
     margin: 0;
-
-
   }
 
   .form__submit {
     margin-right: 75px;
-    //width: 567px;
     width: 47%;
   }
 
