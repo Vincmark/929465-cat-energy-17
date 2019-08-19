@@ -61,7 +61,6 @@ if (catToggleSlider!==null) {
     });
 }
 
-var catBgAfter1 = document.querySelector('.example__gray-after');
 var catBgBefore1 = document.querySelector('.example__gray-before');
 var catImgAfter1 = document.querySelector('.example__cat-after');
 var catImgBefore1 = document.querySelector('.example__cat-before');
@@ -71,20 +70,17 @@ if (catToggleSlider1!==null) {
     catToggleSlider1.addEventListener('input', function (evt) {
         evt.preventDefault();
         console.log('Cat ' + catImgBefore1.style.width);
-        var offset = 173 + Number(catToggleSlider.value);
-        var offset1 = 173 + 344 - Number(catToggleSlider.value);
-        var offset2 = 173 - Number(catToggleSlider.value);
+        var offset = 148 + Number(catToggleSlider.value);
+        var offset1 = 148 + 394 - Number(catToggleSlider.value);
+        var offset2 = 197 - Number(catToggleSlider.value);
         console.log('Offset =' + offset);
-        //catImgBefore1.style.width = 'calc(50% - '+ offset +'px)';
         catImgBefore1.style.width = offset +'px';
         catImgAfter1.style.width = offset1 +'px';
         catBgBefore1.style.width = 'calc(50% - '+ offset2 +'px)';
-        //catBgAfter1.style.width = 'calc(50% - '+ offset +'px)';
         console.log('Cat ' + catImgBefore1.style.width);
         console.log('Slider ' + catToggleSlider.value);
     });
 }
-
 
 // Form validation
 var submitButton = document.querySelector('.form__submit');

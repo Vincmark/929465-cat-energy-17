@@ -274,8 +274,9 @@
     width: 50%;
     height: 517px;
     position: absolute;
-    bottom: 0;
+    bottom: 10px;
     right: 0;
+    erflow: hidden;
   }
 
   .example__cat-before {
@@ -286,7 +287,7 @@
     width: 50%;
     height: 517px;
     position: absolute;
-    bottom: 0;
+    bottom: 10px;
     left: 0;
   }
 
@@ -294,8 +295,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-top: 35px;
-    padding-bottom: 35px;
+    padding-top: 15px;
+    padding-bottom: 70px;
     bottom: 0;
     left: 0;
     right: 0;
@@ -308,7 +309,7 @@
     padding-left: 25px;
     padding-right: 25px;
     line-height: 0;
-    width: 428px;
+    width: 478px;
   }
 
   .example__slider-central {
@@ -332,5 +333,85 @@
     border: 1px solid #cecece;
     //box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
     cursor: pointer;
+  }
+}
+
+@media (min-width: 1281px) {
+  .example {
+
+    position: relative;
+    max-width: 1280px;
+    margin: auto;
+  }
+
+  .example__wrapper {
+    width: 495px;
+    position: absolute;
+    z-index: 1;
+    left: 0;
+  }
+
+  .example__slider-wrapper {
+    width: 100%;
+    position: relative;
+    height: 600px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    //background-color: #f2f2f2;
+  }
+
+  .example__slider-content {
+    width: 55%;
+    position: relative;
+    //height: 460px;
+  }
+
+  .example__slider-bg {
+    position: absolute;
+    height: 460px;
+    bottom: 0;
+    width: 100%;
+    background-color: #f2f2f2;
+  }
+
+  .example__wrapper {
+    border-top: none;
+    padding-top: 0;
+  }
+
+  .example__header {
+    padding-top: 0px;
+  }
+
+  .example__numbers-wrapper {
+    flex-direction: column;
+  }
+
+  .example__expenses {
+    text-align: left;
+  }
+
+  .example__expenses-price {
+    display: inline-block;
+    padding-left: 60px;
+  }
+
+  .example__story {
+    font-size: 16px;
+    line-height: 24px;
+    padding-top: 145px;
+  }
+
+  .example__list {
+    padding-top: 71px;
+  }
+
+  .example__item-description {
+    background-color: $color-bg-gray;
+  }
+
+  .example__expenses {
+    padding-top: 50px;
   }
 }
