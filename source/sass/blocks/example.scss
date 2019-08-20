@@ -92,12 +92,24 @@
   background-image: url("../img/before-mobile@1x.png");
   background-repeat: no-repeat;
   background-position: center center;
+  background-size: cover;
 }
 
 .example__cat--after {
   background-image: url("../img/after-mobile@1x.png");
   background-repeat: no-repeat;
   background-position: center center;
+  background-size: cover;
+}
+
+@media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+  .example__cat--before {
+    background-image: url("../img/before-mobile@2x.png");
+  }
+
+  .example__cat--after {
+    background-image: url("../img/after-mobile@2x.png");
+  }
 }
 
 .example__cat-btn {
@@ -304,6 +316,16 @@
     position: absolute;
     bottom: 10px;
     left: 0;
+  }
+
+  @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    .example__cat-after {
+      background-image: url("../img/after-tablet@2x.png");
+    }
+
+    .example__cat-before {
+      background-image: url("../img/before-tablet@2x.png");
+    }
   }
 
   .example__slider {

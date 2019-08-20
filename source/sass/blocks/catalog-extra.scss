@@ -106,6 +106,12 @@
   text-decoration: none;
 }
 
+@media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+  .catalog-extra__gift {
+    background-image: url("../img/gift-photo-mobile@2x.jpg");
+  }
+}
+
 .catalog-extra__gift-text {
   font-family: "Arial", sans-serif;
   font-size: 16px;
@@ -189,6 +195,12 @@
     text-decoration: none;
   }
 
+  @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    .catalog-extra__gift {
+      background-image: url("../img/gift-photo-tablet@2x.jpg");
+    }
+  }
+
   .catalog-extra__gift-text {
     text-align: left;
     padding-top: 0;
@@ -252,6 +264,12 @@
     align-items: center;
     justify-content: space-around;
     text-decoration: none;
+  }
+
+  @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    .catalog-extra__gift {
+      background-image: url("../img/gift-photo-desktop@2x.jpg");
+    }
   }
 
   .catalog-extra__gift-text {
