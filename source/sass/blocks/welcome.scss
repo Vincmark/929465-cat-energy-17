@@ -18,6 +18,12 @@
   padding-left: 20px;
 }
 
+@media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+  .welcome__wrapper_high {
+    background-image: url("../img/index-background-mobile@2x.jpg");
+  }
+}
+
 .welcome__wrapper_low {
   background-color: $color-bg-white;
   width: 100%;
@@ -155,6 +161,12 @@
     top: 0;
     right: 0;
     z-index: -1;
+  }
+
+  @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    .welcome__background {
+      background-image: url("../img/index-background-desktop@2x.jpg");
+    }
   }
 
   .welcome {
