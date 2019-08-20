@@ -28,7 +28,10 @@ if (catToggleLinkBefore!==null) {
         if (catImageHolder.classList.contains('example__cat--after')) {
             catImageHolder.classList.remove('example__cat--after');
             catImageHolder.classList.add('example__cat--before');
-            catToggleSlider.value = '1';
+            catToggleSlider.value = '0';
+          catImgBefore1.style.width = 148 + Number(catToggleSlider.value) +'px';
+          catImgAfter1.style.width = 148 + 394 - Number(catToggleSlider.value) +'px';
+          catBgBefore1.style.width = 'calc(50% - '+ (197 - Number(catToggleSlider.value)) +'px)';
         }
     });
 }
@@ -39,30 +42,59 @@ if (catToggleLinkAfter!==null) {
         if (catImageHolder.classList.contains('example__cat--before')) {
             catImageHolder.classList.remove('example__cat--before');
             catImageHolder.classList.add('example__cat--after');
-            catToggleSlider.value = '2';
+            catToggleSlider.value = '394';
+          catImgBefore1.style.width = 148 + Number(catToggleSlider.value) +'px';
+          catImgAfter1.style.width = 148 + 394 - Number(catToggleSlider.value) +'px';
+          catBgBefore1.style.width = 'calc(50% - '+ (197 - Number(catToggleSlider.value)) +'px)';
+
         }
     });
 }
 
 if (catToggleSlider!==null) {
-    catToggleSlider.addEventListener('click', function (evt) {
+    catToggleSlider.addEventListener('input', function (evt) {
         evt.preventDefault();
-        console.log('slider alive');
-        // console.log(catToggleSlider.value);
-        if (catToggleSlider.value === '1') {
-            if (catImageHolder.classList.contains('example__cat--after')) {
-                catImageHolder.classList.remove('example__cat--after');
-                catImageHolder.classList.add('example__cat--before');
-            }
-        } else if (catToggleSlider.value === '2') {
-            if (catImageHolder.classList.contains('example__cat--before')) {
-                catImageHolder.classList.remove('example__cat--before');
-                catImageHolder.classList.add('example__cat--after');
-            }
-        }
+        // if (catToggleSlider.value === '1') {
+        //     if (catImageHolder.classList.contains('example__cat--after')) {
+        //         catImageHolder.classList.remove('example__cat--after');
+        //         catImageHolder.classList.add('example__cat--before');
+        //     }
+        // } else if (catToggleSlider.value === '2') {
+        //     if (catImageHolder.classList.contains('example__cat--before')) {
+        //         catImageHolder.classList.remove('example__cat--before');
+        //         catImageHolder.classList.add('example__cat--after');
+        //     }
+        // }
     });
 }
 
+var catBgBefore1 = document.querySelector('.example__gray-before');
+var catImgAfter1 = document.querySelector('.example__cat-after');
+var catImgBefore1 = document.querySelector('.example__cat-before');
+var catToggleSlider1 = document.querySelector('.example__slider-central');
+
+if (catToggleSlider1!==null) {
+    catToggleSlider1.addEventListener('input', function (evt) {
+        evt.preventDefault();
+        //if (window.screen.width <=768) {
+        if (catToggleSlider.value <= 197) {
+          console.log('fat - ' + catToggleSlider.value);
+          if (catImageHolder.classList.contains('example__cat--after')) {
+            catImageHolder.classList.remove('example__cat--after');
+            catImageHolder.classList.add('example__cat--before');
+          }
+        } else if (catToggleSlider.value > 197) {
+          console.log('slim - ' + catToggleSlider.value);
+          if (catImageHolder.classList.contains('example__cat--before')) {
+            catImageHolder.classList.remove('example__cat--before');
+            catImageHolder.classList.add('example__cat--after');
+          }
+        }
+        catImgBefore1.style.width = 148 + Number(catToggleSlider.value) +'px';
+        catImgAfter1.style.width = 148 + 394 - Number(catToggleSlider.value) +'px';
+        catBgBefore1.style.width = 'calc(50% - '+ (197 - Number(catToggleSlider.value)) +'px)';
+    });
+}
 
 // Form validation
 var submitButton = document.querySelector('.form__submit');

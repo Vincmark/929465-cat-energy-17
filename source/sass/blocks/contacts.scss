@@ -61,3 +61,117 @@
   width: 100%;
   position: absolute;
 }
+
+@media (min-width: 321px) and (max-width: 768px) {
+  .contacts__map {
+    &-bg {
+      background-image: url("../img/bg-map-tablet@1x.png");
+      background-repeat: no-repeat;
+      background-position: center center;
+      width: auto;
+      height: 400px;
+      position: relative;
+      overflow: hidden;
+    }
+  }
+
+  .contacts__spin {
+    position: absolute;
+    background-image: url("../img/map-pin.png");
+    background-repeat: no-repeat;
+    background-size: 124px 106px;
+    width: 130px;
+    height: 130px;
+    top: 135px;
+    left: calc(50% - 60px);
+  }
+}
+
+@media (min-width: 769px) {
+  .contacts__map {
+    &-bg {
+      background-image: url("../img/bg-map-desktop@1x.png");
+      background-repeat: no-repeat;
+      background-position: center center;
+      width: auto;
+      height: 400px;
+      position: relative;
+      overflow: hidden;
+    }
+  }
+
+  .contacts__spin {
+    position: absolute;
+    background-image: url("../img/map-pin.png");
+    background-repeat: no-repeat;
+    background-size: 124px 106px;
+    width: 130px;
+    height: 130px;
+    top: 150px;
+    left: calc(50% + 280px);
+  }
+
+  .contacts__invite {
+    font-size: 20px;
+    line-height: 25px;
+  }
+
+  .contacts__address {
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
+
+@media (min-width: 769px)  and (max-width: 1280px) {
+  .contacts__address {
+    padding-left: 0;
+    padding-right: 70px;
+    text-align: right;
+
+    &-wrapper {
+      padding: 0;
+      width: auto;
+      margin: auto;
+      height: 200px;
+      align-items: center;
+    }
+  }
+
+  .contacts__invite {
+    padding-left: 70px;
+  }
+}
+
+@media (min-width: 1281px) {
+  .contacts {
+    position: relative;
+  }
+
+  .contacts__invite {
+    padding-left: 77px;
+  }
+
+  .contacts__address {
+    font-family: "Arial", sans-serif;
+    font-size: 14px;
+    line-height: 20px;
+    color: $color-text-gray2;
+    font-style: normal;
+    padding-left: 95px;
+
+    &-wrapper {
+      background-color: #ffffff;
+      padding: 0;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      width: 570px;
+      height: 200px;
+      margin: auto;
+      position: absolute;
+      top: 95px;
+      left: calc(50% - 610px);
+      z-index: 10;
+    }
+  }
+}

@@ -1,9 +1,10 @@
 .show-catalog {
-  border-top: none;
-  border-left: 1px solid $color-border;
-  border-right: 1px solid $color-border;
-  border-bottom: 1px solid $color-border;
-  padding: 27px 20px 25px 20px;
+  border: none;
+  //border-top: none;
+  //border-left: 1px solid $color-border;
+  //border-right: 1px solid $color-border;
+  //border-bottom: 1px solid $color-border;
+  //padding: 27px 20px 25px 20px;
 }
 
 .show-catalog__btn-plus {
@@ -76,5 +77,67 @@
 
 .show-catalog__btn-all:active {
   background-color: $color-bg-gray3;
-  color: $color-text-midgray03
+  color: $color-text-midgray03;
+}
+
+@media (min-width: 769px) {
+  .show-catalog__header {
+    font-size: 20px;
+    line-height: 20px;
+    padding-top: 30px;
+  }
+
+  .show-catalog__text {
+    font-size: 16px;
+    line-height: 16px;
+    padding-top: 15px;
+  }
+
+  .show-catalog {
+    border: none;
+    padding: 0;
+  }
+
+  .show-catalog__header-br {
+    display: block;
+  }
+
+  .show-catalog__text-br {
+    display: block;
+  }
+
+  .show-catalog__btn-all {
+    margin-top: 65px;
+  }
+
+  .show-catalog__btn-plus {
+    width: 60px;
+    height: 60px;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    position: relative;
+    margin-bottom: 22px;
+  }
+
+  .show-catalog__btn-plus::after {
+    content: "";
+    position: absolute;
+    width: 2px;
+    height: 60px;
+    top: 0;
+    left: 29px;
+    background-color: $color-bg-gray4;
+  }
+
+  .show-catalog__btn-plus::before {
+    content: "";
+    position: absolute;
+    width: 60px;
+    height: 2px;
+    top: 29px;
+    left: 0;
+    background-color: $color-bg-gray4;
+  }
 }
