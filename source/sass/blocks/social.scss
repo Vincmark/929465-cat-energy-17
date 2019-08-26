@@ -23,22 +23,22 @@
   opacity: 0.3;
 }
 
-@media (min-width: 768px) {
+@media (min-width: $res-tablet) {
   .social {
     border: none;
   }
 
-  .social__icon--vk {
+  .social__link-vk {
     width: 30px;
     height: 16px;
   }
 
-  .social__icon--instagram {
+  .social__link-instagram {
     width: 23px;
     height: 23px;
   }
 
-  .social__icon--facebook {
+  .social__link-facebook {
     width: 14px;
     height: 28px;
   }

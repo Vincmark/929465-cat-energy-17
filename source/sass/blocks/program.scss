@@ -12,7 +12,7 @@
 }
 
 .program__header {
-  font-family: "Oswald Regular", sans-serif;
+  font-family: $font-oswald-reg;
   font-size: 24px;
   line-height: 37px;
   text-transform: uppercase;
@@ -31,7 +31,7 @@
   position: absolute;
 }
 
-.program__header--cat-slim {
+.program__header-circle-cat-slim {
   background-image: url("../img/icon-cat-slim.svg");
   background-repeat: no-repeat;
   width: 35px;
@@ -41,7 +41,7 @@
   position: absolute;
 }
 
-.program__header--cat-pro {
+.program__header-circle-cat-pro {
   background-image: url("../img/icon-cat-pro.svg");
   background-repeat: no-repeat;
   width: 67px;
@@ -52,7 +52,7 @@
 }
 
 .program__description {
-  font-family: "Arial", sans-serif;
+  font-family: $font-arial;
   font-size: 14px;
   line-height: 18px;
   color: $color-text-gray2;
@@ -61,7 +61,7 @@
 }
 
 .program__link {
-  font-family: "Oswald Regular", sans-serif;
+  font-family: $font-oswald-reg;
   font-size: 16px;
   line-height: 16px;
   text-transform: uppercase;
@@ -98,7 +98,7 @@
   opacity: 0.4;
 }
 
-@media (min-width: 769px) {
+@media (min-width: $res-tablet) {
   .program__header {
     font-size: 36px;
     line-height: 37px;
@@ -121,7 +121,7 @@
 }
 
 
-@media (min-width: 769px) and (max-width: 1280px) {
+@media (min-width: $res-tablet) and (max-width: $res-desktop) {
   .program {
     padding-left: 30px;
     padding-right: 30px;
@@ -158,7 +158,7 @@
     left: unset;
   }
 
-  .program__header--cat-slim {
+  .program__header-circle-cat-slim {
     width: 140px;
     height: 194px;
     top: 80px;
@@ -166,7 +166,7 @@
     left: unset;
   }
 
-  .program__header--cat-pro {
+  .program__header-circle-cat-pro {
     width: 268px;
     height: 112px;
     top: 135px;
@@ -175,7 +175,7 @@
   }
 }
 
-@media (min-width: 1281px) {
+@media (min-width: $res-desktop) {
   .programs {
     max-width: 1440px;
     margin: auto;
@@ -227,14 +227,14 @@
     left: 52px;
   }
 
-  .program__header--cat-slim {
+  .program__header-circle-cat-slim {
     width: 70px;
     height: 97px;
     top: 41px;
     left: 66px;
   }
 
-  .program__header--cat-pro {
+  .program__header-circle-cat-pro {
     width: 134px;
     height: 56px;
     top: 69px;

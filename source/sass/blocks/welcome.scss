@@ -33,7 +33,7 @@
 }
 
 .welcome__header {
-  font-family: "Oswald Regular", sans-serif;
+  font-family: $font-oswald-reg;
   font-size: 36px;
   line-height: 36px;
   color: $color-text-white;
@@ -43,7 +43,7 @@
 }
 
 .welcome__description {
-  font-family: "Oswald Regular", sans-serif;
+  font-family: $font-oswald-reg;
   font-size: 14px;
   text-transform: uppercase;
   color: $color-text-white;
@@ -66,7 +66,7 @@
   height: 40px;
   background-color: $color-bg-green;
   color: $color-text-white;
-  font-family: "Oswald Regular", sans-serif;
+  font-family: $font-oswald-reg;
   font-size: 14px;
   line-height: 18px;
   text-decoration: none;
@@ -86,7 +86,7 @@
   color: $color-text-white03;
 }
 
-@media (min-width: 769px) {
+@media (min-width: $res-tablet) {
   .welcome {
     display: flex;
     flex-direction: column;
@@ -115,7 +115,7 @@
   }
 
   .welcome__description {
-    font-family: "Oswald Regular", sans-serif;
+    font-family: $font-oswald-reg;
     font-size: 20px;
     line-height: 20px;
     color: $color-text-gray1;
@@ -127,7 +127,7 @@
     min-width: unset;
     width: auto;
     height: 50px;
-    font-family: "Oswald Regular", sans-serif;
+    font-family: $font-oswald-reg;
     font-size: 20px;
     line-height: 20px;
     padding-left: 26px;
@@ -149,7 +149,7 @@
   }
 }
 
-@media (min-width: 1281px) {
+@media (min-width: $res-desktop) {
   .welcome__background {
     background-image: url("../img/index-background-desktop@1x.jpg");
     background-repeat: no-repeat;

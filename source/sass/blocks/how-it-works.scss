@@ -5,7 +5,7 @@
 }
 
 .how-it-works__header {
-  font-family: "Oswald Regular", sans-serif;
+  font-family: $font-oswald-reg;
   font-size: 36px;
   line-height: 60px;
   color: $color-text-gray1;
@@ -24,7 +24,7 @@
 }
 
 .how-it-works__item-text {
-  font-family: "Arial", sans-serif;
+  font-family: $font-arial;
   font-size: 14px;
   line-height: 18px;
   color: $color-text-gray2;
@@ -40,45 +40,45 @@
   background-size: 50px 50px;
 }
 
-.how-it-works__item--leaf {
+.how-it-works__item-icon--leaf {
   background-image: url("../img/advantage-leaf@1x.png");
 }
 
-.how-it-works__item--powder {
+.how-it-works__item-icon--powder {
   background-image: url("../img/advantage-powder@1x.png");
 }
 
-.how-it-works__item--meal {
+.how-it-works__item-icon--meal {
   background-image: url("../img/advantage-dining@1x.png");
 }
 
-.how-it-works__item--time {
+.how-it-works__item-icon--time {
   background-image: url("../img/advantage-clock@1x.png");
 }
 
 @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
-  .how-it-works__item--leaf {
+  .how-it-works__item-icon--leaf {
     background-image: url("../img/advantage-leaf@2x.png");
   }
 
-  .how-it-works__item--powder {
+  .how-it-works__item-icon--powder {
     background-image: url("../img/advantage-powder@2x.png");
   }
 
-  .how-it-works__item--meal {
+  .how-it-works__item-icon--meal {
     background-image: url("../img/advantage-dining@2x.png");
   }
 
-  .how-it-works__item--time {
+  .how-it-works__item-icon--time {
     background-image: url("../img/advantage-clock@2x.png");
   }
 }
 
-@media (min-width: 769px) {
+@media (min-width: $res-tablet) {
   .how-it-works__item::after {
     counter-increment: section;
     content: counter(section);
-    font-family: "Oswald Regular", sans-serif;
+    font-family: $font-oswald-reg;
     font-size: 281px;
     line-height: 281px;
     color: #f2f2f2;
@@ -103,7 +103,7 @@
   }
 }
 
-@media (min-width: 769px) and (max-width: 1280px) {
+@media (min-width: $res-tablet) and (max-width: $res-desktop) {
   .how-it-works__item {
     width: 230px;
     min-height: 281px;
@@ -136,7 +136,7 @@
   }
 }
 
-@media (min-width: 1281px) {
+@media (min-width: $res-desktop) {
   .how-it-works__item {
     min-width: 250px;
     min-height: 281px;

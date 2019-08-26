@@ -8,7 +8,7 @@
 }
 
 .example__header {
-  font-family: "Oswald Regular", sans-serif;
+  font-family: $font-oswald-reg;
   font-size: 36px;
   line-height: 60px;
   color: $color-text-gray1;
@@ -16,7 +16,7 @@
 }
 
 .example__story {
-  font-family: "Arial", sans-serif;
+  font-family: $font-arial;
   font-size: 14px;
   line-height: 18px;
   color: $color-text-gray2;
@@ -48,7 +48,7 @@
 }
 
 .example__item-point {
-  font-family: "Oswald Regular", sans-serif;
+  font-family: $font-oswald-reg;
   font-size: 24px;
   line-height: 24px;
   text-transform: uppercase;
@@ -56,7 +56,7 @@
 }
 
 .example__item-description {
-  font-family: "Arial", sans-serif;
+  font-family: $font-arial;
   font-size: 12px;
   line-height: 12px;
   color: $color-text-gray2;
@@ -70,7 +70,7 @@
 }
 
 .example__expenses {
-  font-family: "Oswald Regular", sans-serif;
+  font-family: $font-oswald-reg;
   font-size: 14px;
   line-height: 20px;
   text-transform: uppercase;
@@ -113,7 +113,7 @@
 }
 
 .example__cat-btn {
-  font-family: "Oswald Regular", sans-serif;
+  font-family: $font-oswald-reg;
   font-size: 14px;
   line-height: 20px;
   text-transform: uppercase;
@@ -157,7 +157,7 @@
   border-radius: 3px;
 }
 
-@media (min-width: 769px) {
+@media (min-width: $res-tablet) {
   .example {
     background-color: transparent;
   }
@@ -382,7 +382,7 @@
   }
 }
 
-@media (min-width: 1281px) {
+@media (min-width: $res-desktop) {
   .example {
 
     position: relative;
@@ -430,13 +430,11 @@
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
-    //background-color: #f2f2f2;
   }
 
   .example__slider-content {
     width: 55%;
     position: relative;
-    //height: 460px;
   }
 
   .example__slider-bg {

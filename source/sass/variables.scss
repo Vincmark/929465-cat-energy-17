@@ -1,6 +1,17 @@
-$font-oswald-reg: "Oswald Regular", sans-serif;
-$font-oswald-med: "Oswald Medium", sans-serif;
+$font-oswald-reg: "Oswald Regular", "Arial", sans-serif;
+$font-oswald-med: "Oswald Medium", "Arial", sans-serif;
 $font-arial: "Arial", sans-serif;
+
+$res-mobile: 320px;
+$res-tablet: 768px;
+$res-desktop: 1300px;
+
+// @media (min-width: $res-mobile) and (max-width: $res-tablet) {
+
+// @media (min-width: $res-tablet) {
+// @media (min-width: $res-tablet) and (max-width: $res-desktop) {
+// @media (min-width: $res-desktop) {
+
 
 $color-border: #ededed;
 $color-border2: #cdcdcd;

@@ -3,7 +3,7 @@
 }
 
 .contacts__invite {
-  font-family: "Oswald Regular", sans-serif;
+  font-family: $font-oswald-reg;
   font-size: 16px;
   line-height: 20px;
   color: $color-text-gray1;
@@ -11,7 +11,7 @@
 }
 
 .contacts__address {
-  font-family: "Arial", sans-serif;
+  font-family: $font-arial;
   font-size: 14px;
   line-height: 20px;
   color: $color-text-gray2;
@@ -72,7 +72,7 @@
   position: absolute;
 }
 
-@media (min-width: 321px) and (max-width: 768px) {
+@media (min-width: $res-mobile) and (max-width: $res-tablet) {
   .contacts__map {
     &-bg {
       background-image: url("../img/bg-map-tablet@1x.png");
@@ -105,7 +105,7 @@
   }
 }
 
-@media (min-width: 769px) {
+@media (min-width: $res-tablet) {
   .contacts__map {
     &-bg {
       background-image: url("../img/bg-map-desktop@1x.png");
@@ -148,7 +148,7 @@
   }
 }
 
-@media (min-width: 769px)  and (max-width: 1280px) {
+@media (min-width: $res-tablet) and (max-width: $res-desktop) {
   .contacts__address {
     padding-left: 0;
     padding-right: 70px;
@@ -168,7 +168,7 @@
   }
 }
 
-@media (min-width: 1281px) {
+@media (min-width: $res-desktop) {
   .contacts {
     position: relative;
   }
@@ -178,7 +178,7 @@
   }
 
   .contacts__address {
-    font-family: "Arial", sans-serif;
+    font-family: $font-arial;
     font-size: 14px;
     line-height: 20px;
     color: $color-text-gray2;

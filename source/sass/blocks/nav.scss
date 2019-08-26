@@ -18,7 +18,7 @@
 }
 
 .nav__link {
-  font-family: "Oswald Medium", sans-serif;
+  font-family: $font-oswald-med;
   font-size: 20px;
   line-height: 20px;
   text-transform: uppercase;
@@ -39,7 +39,7 @@
   border-bottom: 2px solid $color-bg-green;
 }
 
-@media (min-width: 769px) {
+@media (min-width: $res-tablet) {
   .nav__wrapper {
     display: flex;
     justify-content: flex-end;
@@ -50,7 +50,7 @@
   }
 
   .nav__link {
-    font-family: "Oswald Regular", sans-serif;
+    font-family: $font-oswald-reg;
     font-size: 18px;
     line-height: 24px;
   }
@@ -68,9 +68,9 @@
   }
 }
 
-@media (min-width: 1281px) {
+@media (min-width: $res-desktop) {
   .nav__link {
-    font-family: "Oswald Regular", sans-serif;
+    font-family: $font-oswald-reg;
     font-size: 20px;
     line-height: 25px;
   }

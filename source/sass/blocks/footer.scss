@@ -46,7 +46,7 @@
 }
 
 .footer__academy-text {
-  font-family: "Arial", sans-serif;
+  font-family: $font-arial;
   font-size: 16px;
   line-height: 16px;
   color: $color-text-gray2;
@@ -71,7 +71,7 @@
   opacity: 0.3;
 }
 
-@media (min-width: 768px) {
+@media (min-width: $res-tablet) {
   .footer__wrapper {
     padding-left: 30px;
     padding-right: 30px;
@@ -100,7 +100,7 @@
   }
 }
 
-@media (min-width: 1280px) {
+@media (min-width: $res-desktop) {
   .footer {
     background-color: $color-bg-gray;
     width: 100%;

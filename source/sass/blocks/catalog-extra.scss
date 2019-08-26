@@ -3,7 +3,7 @@
 }
 
 .catalog-extra__subheader {
-  font-family: "Oswald Regular", sans-serif;
+  font-family: $font-oswald-reg;
   font-size: 24px;
   line-height: 24px;
   color: $color-text-gray1;
@@ -48,7 +48,7 @@
 }
 
 .catalog-extra__title {
-  font-family: "Oswald Regular", sans-serif;
+  font-family: $font-oswald-reg;
   font-size: 16px;
   line-height: 16px;
   color: $color-text-gray3;
@@ -57,7 +57,7 @@
 }
 
 .catalog-extra__params {
-  font-family: "Arial", sans-serif;
+  font-family: $font-arial;
   font-size: 12px;
   line-height: 14px;
   color: $color-text-gray2;
@@ -70,7 +70,7 @@
 }
 
 .catalog-extra__order-btn {
-  font-family: "Oswald Regular", sans-serif;
+  font-family: $font-oswald-reg;
   font-size: 16px;
   line-height: 20px;
   color: $color-text-white;
@@ -113,7 +113,7 @@
 }
 
 .catalog-extra__gift-text {
-  font-family: "Arial", sans-serif;
+  font-family: $font-arial;
   font-size: 16px;
   line-height: 20px;
   color: $color-text-white;
@@ -121,9 +121,9 @@
   padding-top: 65px;
 }
 
-@media (min-width: 769px) {
+@media (min-width: $res-tablet) {
   .catalog-extra__subheader {
-    font-family: "Oswald Regular", sans-serif;
+    font-family: $font-oswald-reg;
     font-size: 24px;
     line-height: 24px;
     color: $color-text-gray1;
@@ -148,7 +148,7 @@
   }
 }
 
-@media (min-width: 769px) and (max-width: 1280px) {
+@media (min-width: $res-tablet) and (max-width: $res-desktop) {
   .catalog-extra__item {
     border: 1px solid $color-border2;
     padding-top: 25px;
@@ -207,7 +207,7 @@
   }
 }
 
-@media (min-width: 1281px) {
+@media (min-width: $res-desktop) {
   .catalog-extra__item {
     border-top: 1px solid $color-border2;
     border-bottom: 1px solid $color-border2;
@@ -296,12 +296,15 @@
 
   .catalog-extra__params-value {
     text-align: right;
-    //align-content: flex-end;
     width: 25%;
-    //align-self: flex-end;
   }
 
   .catalog-extra__gift-img {
     margin-top: 20px;
+  }
+
+  .catalog-extra__subheader-text-wrapper {
+    width: 1280px;
+    margin: auto;
   }
 }
